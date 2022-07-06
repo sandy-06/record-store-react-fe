@@ -52,6 +52,10 @@ function Records() {
         }
         setError("");
         setShowForm(false);
+        
+    }
+    if (showForm) {
+        return <RecordForm record={scopedRecord} notify={notify} />
     }
     return (
         <>
